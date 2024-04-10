@@ -1,3 +1,4 @@
+//create an class for student entry
 class Student{
     String id;
     String name;
@@ -24,6 +25,8 @@ public class Demo {
         //     }
         //     System.out.println();
         // }
+
+        //creating instances of student class and populate the data to the instance
         Student s1 = new Student();
         s1.id = "1";
         s1.name = "Mani";
@@ -38,12 +41,14 @@ public class Demo {
         s3.id = "3";
         s3.name = "Niraj";
         s3.marks = "99";
-        
+
+        //storing the instance data to the students array 
         Student students[] = new Student[3];
         students[0] = s1;
         students[1] = s2;
         students[2] = s3;
-        
+
+        //using enhanced loop to print the array values
         for(Student stud: students){
             System.out.println(stud.name + " : " +stud.marks);
         }
